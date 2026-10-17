@@ -2,6 +2,20 @@
 
 **LaTeXová šablona pro maturitní, ročníkové a další odborné práce** vytvořená především pro studenty **Střední průmyslové školy a Vyšší odborné školy v Liberci**. Lze ji přizpůsobit i jiným školám.
 
+## Quick Start – začněte během několika minut
+
+Nepotřebujete nic instalovat: stačí prohlížeč a bezplatný účet na [Overleafu](https://www.overleaf.com/).
+
+1. **Zaregistrujte se na Overleafu** nebo se přihlaste.
+2. **Stáhněte si tento repozitář:** na GitHubu klikněte na **Code → Download ZIP**.
+3. **Vytvořte projekt:** v Overleafu zvolte **New Project → Upload Project** a nahrajte ZIP.
+4. **Otevřete `main.tex`** a vyplňte údaje o práci, anotace a případně upravte čestné prohlášení.
+5. **Přejděte do `kapitoly/`** a postupně nahraďte demonstrační text vlastní prací.
+
+**Hotovo.** Tlačítkem **Recompile** si kdykoli zobrazíte aktuální PDF. Pokud chcete kapitolu vynechat, přidat nebo změnit její pořadí, upravte příslušné řádky `\input{...}` v `main.tex`.
+
+> **Tip:** Nevíte, jak vložit obrázek, tabulku, vzorec nebo zdrojový kód? Příklady najdete přímo v demonstračních kapitolách včetně komentářů ke zdrojovému zápisu. Soubor `spslib.cls` neupravujte.
+
 ## Proč použít LaTeX místo Wordu?
 
 Při psaní odborné práce by se měl autor soustředit především na **obsah, nikoli na formátování**. LaTeX odděluje obsah dokumentu od jeho vzhledu: píšete text a označujete jeho strukturu, zatímco o sazbu se stará šablona.
@@ -18,34 +32,6 @@ Co vám to přinese?
 LaTeX má i nevýhody: zpočátku je nutné naučit se několik příkazů a při psaní nevidíte přímo finální vzhled dokumentu. Právě proto tato šablona obsahuje **hotové formátování a krátké, česky komentované ukázky**. Nemusíte začínat od nuly.
 
 **[Prohlédnout ukázkovou práci (PDF)](ukazka.pdf)**
-
-## Quick Start – začněte během několika minut
-
-Nepotřebujete nic instalovat: stačí prohlížeč a bezplatný účet na [Overleafu](https://www.overleaf.com/).
-
-1. **Zaregistrujte se na Overleafu** nebo se přihlaste.
-2. **Stáhněte si tento repozitář:** na GitHubu klikněte na **Code → Download ZIP**.
-3. **Vytvořte projekt:** v Overleafu zvolte **New Project → Upload Project** a nahrajte ZIP.
-4. **Otevřete `main.tex`** a vyplňte údaje o práci, anotace a případně upravte čestné prohlášení.
-5. **Přejděte do `kapitoly/`** a postupně nahraďte demonstrační text vlastní prací.
-
-**Hotovo.** Tlačítkem **Recompile** si kdykoli zobrazíte aktuální PDF. Pokud chcete kapitolu vynechat, přidat nebo změnit její pořadí, upravte příslušné řádky `\input{...}` v `main.tex`.
-
-> **Tip:** Nevíte, jak vložit obrázek, tabulku, vzorec nebo zdrojový kód? Příklady najdete přímo v demonstračních kapitolách včetně komentářů ke zdrojovému zápisu. Soubor `spslib.cls` neupravujte.
-
-## Práce offline – bez Overleafu
-
-Pokud chcete psát i bez připojení k internetu, můžete šablonu používat přímo na svém počítači. **Overleaf doporučujeme pro začátek**, protože nevyžaduje žádnou instalaci; následující programy jsou plnohodnotnou alternativou pro práci offline.
-
-| Operační systém | Doporučený editor | Distribuce LaTeXu |
-| --- | --- | --- |
-| **Windows** | [TeXstudio](https://texstudio.org/) | [MiKTeX](https://miktex.org/download) nebo [TeX Live](https://www.tug.org/texlive/) |
-| **Linux** | [Kile](https://apps.kde.org/cs/kile/) (případně TeXstudio) | [TeX Live](https://www.tug.org/texlive/), obvykle dostupný ze správce balíčků |
-| **macOS** | [TeXShop](https://texshop.org/) (případně TeXstudio) | [MacTeX](https://www.tug.org/mactex/), který TeXShop již obsahuje |
-
-**Pozor:** Editor slouží k psaní textu; pro sestavení PDF je potřeba také nainstalovat distribuci LaTeXu. Rozbalte stažený ZIP, otevřete soubor `main.tex` v editoru a nastavte sestavení pomocí `latexmk` a `pdfLaTeXu`. Šablona používá také **Biber** (bibliografie) a **TeXcount** (automatický počet slov), proto je musí vaše instalace obsahovat. U úplné instalace TeX Live nebo MacTeXu bývají k dispozici; při menší instalaci může být potřeba je doinstalovat.
-
-Stejné soubory projektu můžete používat offline i v Overleafu. Při přenášení práce vždy zachovejte celou strukturu složek a všechny soubory, nejen `main.tex`.
 
 ## Jak se vyznat v souborech?
 
@@ -64,6 +50,20 @@ Stejné soubory projektu můžete používat offline i v Overleafu. Při přená
 Seznam zkratek, seznam tabulek i přílohy můžete podle potřeby vypnout v `main.tex`. Kapitoly Úvod a Závěr jsou nečíslované; ostatní kapitoly se číslují automaticky.
 
 **Delší název práce?** V `main.tex` můžete odkomentovat `\kratkynazevprace{...}` a uvést stručnou variantu názvu pro záhlaví. Na titulní straně zůstane plný název; krátký název není povinný.
+
+## Jak vložit podepsané zadání práce?
+
+Titulní list má prázdný rub. Následuje **samostatný list určený pro podepsané zadání** (líc a rub), takže dokument lze správně vytisknout oboustranně.
+
+Vytvořte soubor `zadani.pdf` obsahující naskenované podepsané zadání: **přesně dvě stránky** – nejprve líc, poté rub zadání (i kdyby byl rub prázdný). Nahrajte jej do kořene projektu a v `main.tex` odkomentujte řádek:
+
+   ```latex
+   \zadani{zadani.pdf}
+   ```
+
+Tím se zástupný list automaticky nahradí oběma stránkami naskenovaného zadání. Před odevzdáním zkontrolujte pořadí stránek ve výsledném PDF.
+
+**Do odevzdávané vytištěné verze práce vkládejte namísto skenu podepsaný originál.**
 
 ## Jak přidat literaturu a citovat?
 
@@ -94,21 +94,6 @@ Ve výsledném PDF se objeví například odkaz **[1]**; číslování a seznam 
 Záznamy BibTeX/BibLaTeX lze často exportovat z katalogů a odborných databází; automaticky získané údaje vždy zkontrolujte. Pro knihy, datasheety a webové stránky použijte vhodný typ záznamu podle příkladů v projektu.
 
 Další pomoc: [Bibliografie s BibLaTeXem – Overleaf (anglicky)](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex) · [ČSN ISO 690:2022 – Citace.com (česky)](https://www.citace.com/CSN-ISO-690).
-
-## Jak vložit podepsané zadání práce?
-
-Titulní list má prázdný rub. Následuje **samostatný list určený pro podepsané zadání** (líce a rub), takže dokument lze správně vytisknout oboustranně.
-
-Máte dvě možnosti:
-
-1. **Papírové zadání:** nic nenastavujte. V PDF zůstane zástupný list a do vytištěné práce vložíte podepsané zadání fyzicky.
-2. **Naskenované zadání:** vytvořte soubor `zadani.pdf` obsahující **přesně dvě stránky** – nejprve líc, poté rub zadání (i když je rub prázdný). Nahrajte jej do kořene projektu a v `main.tex` odkomentujte řádek:
-
-   ```latex
-   \zadani{zadani.pdf}
-   ```
-
-Tím se zástupný list automaticky nahradí oběma stránkami naskenovaného zadání. **Nevkládejte sken ještě jednou ručně** a před odevzdáním zkontrolujte pořadí stránek ve výsledném PDF.
 
 ## Odevzdání práce
 
@@ -158,6 +143,20 @@ Další český rozcestník: [LaTeX na českých Wikiknihách](https://cs.wikibo
 **Proč se projekt nenačítá po nahrání ZIPu z GitHubu?** Zkontrolujte, zda je `main.tex` v **kořeni projektu**, nikoli uvnitř jedné nadřazené složky. Je-li potřeba, přesuňte obsah této složky o úroveň výš. [Podrobnosti v dokumentaci Overleafu](https://docs.overleaf.com/managing-projects-and-files/uploading-a-project).
 
 > **Pozor:** Internetové návody mohou používat jiné balíčky a nastavení. Pro běžné psaní této práce neměňte `spslib.cls` ani `latexmkrc` a nepřebírejte cizí `\documentclass` nebo preambuli do `main.tex`.
+
+## Práce offline – bez Overleafu
+
+Pokud chcete psát i bez připojení k internetu, můžete šablonu používat přímo na svém počítači. **Overleaf doporučujeme pro začátek**, protože nevyžaduje žádnou instalaci; následující programy jsou plnohodnotnou alternativou pro práci offline.
+
+| Operační systém | Doporučený editor | Distribuce LaTeXu |
+| --- | --- | --- |
+| **Windows** | [TeXstudio](https://texstudio.org/) | [MiKTeX](https://miktex.org/download) nebo [TeX Live](https://www.tug.org/texlive/) |
+| **Linux** | [Kile](https://apps.kde.org/cs/kile/) (případně TeXstudio) | [TeX Live](https://www.tug.org/texlive/), obvykle dostupný ze správce balíčků |
+| **macOS** | [TeXShop](https://texshop.org/) (případně TeXstudio) | [MacTeX](https://www.tug.org/mactex/), který TeXShop již obsahuje |
+
+**Pozor:** Editor slouží k psaní textu; pro sestavení PDF je potřeba také nainstalovat distribuci LaTeXu. Rozbalte stažený ZIP, otevřete soubor `main.tex` v editoru a nastavte sestavení pomocí `latexmk` a `pdfLaTeXu`. Šablona používá také **Biber** (bibliografie) a **TeXcount** (automatický počet slov), proto je musí vaše instalace obsahovat. U úplné instalace TeX Live nebo MacTeXu bývají k dispozici; při menší instalaci může být potřeba je doinstalovat.
+
+Stejné soubory projektu můžete používat offline i v Overleafu. Při přenášení práce vždy zachovejte celou strukturu složek a všechny soubory, nejen `main.tex`.
 
 ## Autor, licence a původ
 
