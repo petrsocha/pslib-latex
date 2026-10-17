@@ -164,4 +164,4 @@ Stejné soubory projektu můžete používat offline i v Overleafu. Při přená
 
 **Školní logo `obrazky/logo-skoly.png` pod LPPL nespadá** a před jeho veřejnou distribucí je potřeba ověřit oprávnění školy. Autorská práva k vlastním studentským pracím zůstávají jejich autorům.
 
-Pro připomínky a hlášení chyb slouží po zveřejnění repozitáře [GitHub Issues](https://github.com/petrsocha/pslib-latex/issues). Přehled změn je v [`CHANGELOG.md`](CHANGELOG.md).
+Pro připomínky a hlášení chyb slouží [GitHub Issues](https://github.com/petrsocha/pslib-latex/issues). 
