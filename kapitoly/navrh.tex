@@ -1,0 +1,86 @@
+%% Copyright 2026 Petr Socha
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3c
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   https://www.latex-project.org/lppl.txt
+%% and version 1.3c is part of all distributions of LaTeX
+%% version 2008 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% The Current Maintainer of this work is Petr Socha.
+%% Maintenance and bug reports: https://github.com/petrsocha/pslib-latex/issues
+%%
+%% The components of this work are listed in MANIFEST.txt.
+%% The school logo is a separately licensed third-party asset.
+
+% ============================================================================
+% NÁVRH -- OBRÁZEK, TABULKA, POPISKY A ODKAZY
+% ============================================================================
+\chapter{Návrh}
+\label{chap:navrh}
+
+% Následující odstavce jsou pouze ilustrační výplňový text.
+% Při psaní vlastní práce je nahraďte popisem navrženého řešení.
+V~této kapitole je uvedena jednoduchá ukázka technického návrhu.
+Text slouží především k~předvedení sazby obrázků, tabulek a~odkazů.
+Ve skutečné práci by měl čtenář zjistit, jaké řešení bylo zvoleno,
+proč je vhodné a~jak spolu jeho jednotlivé části souvisejí.
+
+\section{Ukázkový obrázek}
+
+Nejprve je vhodné popsat hlavní části navrhovaného systému a~jejich
+vzájemné vazby. Přehledné schéma pomůže čtenáři pochopit princip řešení
+dříve, než začne číst podrobnosti o~jednotlivých součástkách.
+Přenos dat od senzoru znázorňuje \autoref{fig:tok-dat}:
+mikrokontrolér předává naměřené hodnoty do počítače.
+
+% Obrázky ukládejte do složky obrazky/ (PNG, JPG nebo PDF).
+% Prostředí figure je plovoucí: [htbp] preferuje začátek/konec stránky,
+% případně samostatnou stránku s obrázkem. Nenuťte obrázek na pevné místo.
+% Popisek je POD obrázkem. Značku \label vložte ZA \caption.
+% Odkaz v textu vložte pomocí \autoref{fig:tok-dat}.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.78\textwidth]{obrazky/ukazkove-schema.pdf}
+  \caption{Ukázkové schéma toku dat (vlastní zpracování)}
+  \label{fig:tok-dat}
+\end{figure}
+
+Senzor získává měřenou veličinu, mikrokontrolér zpracuje přijaté údaje
+a~počítač je zobrazí. Ve skutečné práci je vhodné připojit i~zdůvodnění
+výběru jednotlivých součástek. Jejich parametry lze stručně porovnat
+v~tabulce, která bývá přehlednější než souvislý výčet hodnot.
+
+\section{Ukázková tabulka}
+
+% Hodnoty jsou převzaty z oficiální dokumentace Arduino UNO R3.
+% Tabulka má popisek NAD tabulkou a zarovnání pomocí prostředí tabular.
+Dokumentace výrobce uvádí u~desky Arduino UNO R3 například procesor
+ATmega328P a~takt 16\,MHz~\cite{arduinoUNO}.
+Vybrané parametry shrnuje \autoref{tab:arduino-parametry}.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Vybrané parametry desky Arduino UNO R3 podle výrobce~\cite{arduinoUNO}}
+  \label{tab:arduino-parametry}
+  \begin{tabular}{ll}
+    \hline
+    Parametr & Hodnota \\
+    \hline
+    Mikrokontrolér & ATmega328P \\
+    Taktovací frekvence & 16\,MHz \\
+    Digitální vstupy/výstupy & 14 \\
+    Analogové vstupy & 6 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+Podrobnější parametry bývají uvedené v~datasheetu.
+Jedním z~příkladů je technický list výrobce
+STMicroelectronics~\cite{stm32datasheet}. Při porovnávání je nutné
+ověřit jednotky a~konkrétní variantu součástky.
+
+% U převzatých obrázků a údajů uveďte zdroj. U vlastních napište
+% „vlastní zpracování“. Tabulky nepořizujte jako screenshoty.

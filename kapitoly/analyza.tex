@@ -1,0 +1,59 @@
+%% Copyright 2026 Petr Socha
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3c
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   https://www.latex-project.org/lppl.txt
+%% and version 1.3c is part of all distributions of LaTeX
+%% version 2008 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% The Current Maintainer of this work is Petr Socha.
+%% Maintenance and bug reports: https://github.com/petrsocha/pslib-latex/issues
+%%
+%% The components of this work are listed in MANIFEST.txt.
+%% The school logo is a separately licensed third-party asset.
+
+% ============================================================================
+% ANALÝZA -- NADPISY, SEZNAMY A CITACE
+% ============================================================================
+\chapter{Analýza}
+\label{chap:analyza}
+
+% Nadpisy v LaTeXu: \section, \subsection a případně \subsubsection.
+% Čísla nadpisů se doplňují automaticky. Nezapisujte je ručně.
+\section{Práce s odbornými zdroji}
+
+Základní principy analogových a~digitálních obvodů lze studovat například
+v~knize \emph{Foundations of Analog and Digital Electronic Circuits}~\cite{agarwal2005}.
+
+% Citaci vložte pomocí \cite{klic}. Klíč musí existovat v literatura.bib.
+% Ukázka: odborná kniha (typ @book). Další druhy zdrojů najdete v ostatních kapitolách.
+% Pokud čerpáte konkrétní myšlenku, umístěte citaci k příslušné větě.
+
+\section{Požadavky}
+\label{sec:pozadavky}
+
+% Odrážkový seznam začíná prostředím itemize.
+\subsection{Funkční požadavky}
+Příklady požadavků na jednoduchou aplikaci:
+\begin{itemize}
+  \item zobrazit naměřenou hodnotu,
+  \item uložit výsledek měření,
+  \item upozornit na překročení limitu.
+\end{itemize}
+
+% Číslovaný seznam se zapisuje do prostředí enumerate.
+\subsection{Nefunkční požadavky}
+Pro ilustraci lze vymezit i další požadavky:
+\begin{enumerate}
+  \item snadná obsluha,
+  \item přehledné rozhraní,
+  \item spolehlivé ukládání dat.
+\end{enumerate}
+
+% \autoref přidá automaticky i název typu odkazu („oddíl“, „kapitola“).
+% Pokud potřebujete český pád („v oddílu“), napište jej ručně s \ref.
+Požadavky shrnuje \autoref{sec:pozadavky}. Na tuto analýzu
+navazuje \autoref{chap:navrh}.

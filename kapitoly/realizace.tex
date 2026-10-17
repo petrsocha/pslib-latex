@@ -1,0 +1,49 @@
+%% Copyright 2026 Petr Socha
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3c
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   https://www.latex-project.org/lppl.txt
+%% and version 1.3c is part of all distributions of LaTeX
+%% version 2008 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% The Current Maintainer of this work is Petr Socha.
+%% Maintenance and bug reports: https://github.com/petrsocha/pslib-latex/issues
+%%
+%% The components of this work are listed in MANIFEST.txt.
+%% The school logo is a separately licensed third-party asset.
+
+% ============================================================================
+% REALIZACE -- ZDROJOVÝ KÓD A SPECIÁLNÍ ZNAKY
+% ============================================================================
+\chapter{Realizace}
+\label{chap:realizace}
+
+\section{Výpis zdrojového kódu}
+
+% Krátký zdrojový kód vložte do prostředí lstlisting.
+% Výpis dostane automatické číslo, popisek a volitelně čísla řádků.
+% Diakritika v komentářích a řetězcích Pythonu je podporována.
+\begin{lstlisting}[language=Python,caption={Výpočet průměru naměřených hodnot},label={lst:prumer}]
+def prumer(hodnoty):
+    if not hodnoty:
+        return None
+    return sum(hodnoty) / len(hodnoty)
+
+# Český komentář i řetězec ve zdrojovém kódu
+print("Průměrná hodnota:", prumer([20, 22, 24]))
+\end{lstlisting}
+
+Jednoduchou funkci v~jazyce Python ukazuje \autoref{lst:prumer}.
+U~rozsáhlejších programů je vhodné uvést jen důležité úseky a~úplné
+zdrojové soubory přiložit samostatně.
+
+\section{Speciální znaky}
+
+% Znaky %, _, &, # a $ maji v LaTeXu speciální význam.
+% V běžném textu se zapisují jako \%, \_, \&, \# a \$.
+Cesta k~souboru může vypadat jako \texttt{data\_2026.csv}.
+Hodnota 50\,\% znamená polovinu celku; text \texttt{A\&B} obsahuje znak
+ampersandu. Příkaz \verb|\texttt{...}| sází neproporcionálním písmem.
