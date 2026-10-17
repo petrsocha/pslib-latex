@@ -162,8 +162,6 @@ Stejné soubory projektu můžete používat offline i v Overleafu. Při přená
 
 **Verze:** `1.0beta`. **Copyright © 2026 Petr Socha.** Autor a aktuální správce (*Current Maintainer*) projektu je **Petr Socha**. Zdrojová šablona je šířena pod **LaTeX Project Public License (LPPL) 1.3c nebo novější**, se statusem **`maintained`**. Podrobnosti viz [`LICENSE`](LICENSE), [`LICENSE.tex`](LICENSE.tex) a [`MANIFEST.txt`](MANIFEST.txt).
 
-Šablona je typograficky inspirována šablonou závěrečných prací FIT ČVUT.
-
 **Školní logo `obrazky/logo-skoly.png` pod LPPL nespadá** a před jeho veřejnou distribucí je potřeba ověřit oprávnění školy. Autorská práva k vlastním studentským pracím zůstávají jejich autorům.
 
 Pro připomínky a hlášení chyb slouží po zveřejnění repozitáře [GitHub Issues](https://github.com/petrsocha/pslib-latex/issues). Přehled změn je v [`CHANGELOG.md`](CHANGELOG.md).
