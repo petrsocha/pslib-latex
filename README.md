@@ -2,6 +2,8 @@
 
 **LaTeXová šablona pro maturitní, ročníkové a další odborné práce** vytvořená především pro studenty **Střední průmyslové školy a Vyšší odborné školy v Liberci**. Lze ji přizpůsobit i jiným školám.
 
+![Screenshot Overleaf](obrazky/ukazka-overleaf.png)
+
 ## Quick Start – začněte během několika minut
 
 Nepotřebujete nic instalovat: stačí prohlížeč a bezplatný účet na [Overleafu](https://www.overleaf.com/).
