@@ -1,0 +1,36 @@
+# Copyright 2026 Petr Socha; LPPL 1.3c or later (see LICENSE).
+# LaTeX auxiliary and generated files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.gz
+*.upa
+*.upb
+*.pdfsync
+pocet-slov.tex
+output.pdf
+main.pdf
+*.bak
+*~
+# Editor and OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

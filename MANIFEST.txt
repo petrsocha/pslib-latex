@@ -1,0 +1,26 @@
+SPŠ a VOŠ Liberec – pslib-latex; copyright 2026 Petr Socha
+Components of the Work covered by LPPL 1.3c or later:
+  spslib.cls
+  main.tex
+  latexmkrc
+  literatura.bib (sample bibliographic metadata; source documents not included)
+  zkratky.tex
+  kapitoly/uvod.tex
+  kapitoly/analyza.tex
+  kapitoly/navrh.tex
+  kapitoly/realizace.tex
+  kapitoly/testovani.tex
+  kapitoly/zaver.tex
+  prilohy/seznam-souboru.tex
+  obrazky/ukazkove-schema.pdf
+  README.md
+  ukazka.pdf (compiled demonstration output; included for repository preview)
+  CHANGELOG.md
+  .gitignore
+  LICENSE
+  MANIFEST.txt
+
+The full license text in LICENSE.tex is itself (C) the LaTeX3 Project.
+The asset obrazky/logo-skoly.png is a school logo with separate rights,
+NOT included in the licensed Work; publication requires permission.
+Student-authored thesis content is not automatically included in this license.

@@ -1,0 +1,15 @@
+LaTeX Project Public License (LPPL), version 1.3c or later.
+
+Copyright 2026 Petr Socha.
+
+The complete, unmodified LPPL 1.3c text is supplied in LICENSE.tex
+(an official LaTeX3 Project distribution file). It is also available at:
+https://www.latex-project.org/lppl.txt
+
+Maintenance status: maintained
+Current Maintainer: Petr Socha
+Bug reports (after repository publication):
+https://github.com/petrsocha/pslib-latex/issues
+
+The school logo (obrazky/logo-skoly.png) is a third-party asset
+and is NOT granted under the LPPL by this repository.

@@ -1,0 +1,62 @@
+%% Copyright 2026 Petr Socha
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3c
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   https://www.latex-project.org/lppl.txt
+%% and version 1.3c is part of all distributions of LaTeX
+%% version 2008 or later.
+%%
+%% This work has the LPPL maintenance status `maintained'.
+%% The Current Maintainer of this work is Petr Socha.
+%% Maintenance and bug reports: https://github.com/petrsocha/pslib-latex/issues
+%%
+%% The components of this work are listed in MANIFEST.txt.
+%% The school logo is a separately licensed third-party asset.
+
+% UKAZKOVE ZDROJE: vsechny polozky jsou skutecne publikace/dokumenty.
+% Studenti je pri tvorbe vlastni prace nahradi svymi zdroji.
+% Klic v zavorkach napr. {agarwal2005} se uvadi v textu: \cite{agarwal2005}.
+%
+% 1) ODBORNA KNIHA (autori, nazev, rok, nakladatel, ISBN)
+@book{agarwal2005,
+  author    = {Agarwal, Anant and Lang, Jeffrey H.},
+  title     = {Foundations of Analog and Digital Electronic Circuits},
+  date      = {2005},
+  publisher = {Morgan Kaufmann},
+  location  = {San Mateo, CA},
+  isbn      = {978-1-55860-735-4}
+}
+
+% 2) DATASHEET (vyrobce, oznaceni dokumentu, verze, primy odkaz)
+@manual{stm32datasheet,
+  author       = {{STMicroelectronics}},
+  title        = {STM32F103x8, STM32F103xB: Medium-density performance line Arm-based 32-bit MCU},
+  number       = {DS5319 Rev 20},
+  date         = {2025-07},
+  url          = {https://www.st.com/resource/en/datasheet/stm32f103c8.pdf},
+  urldate      = {2026-10-17},
+  note         = {Datasheet}
+}
+
+% 3) WEBOVA STRANKA VYROBCE (datum pristupu je pro online zdroje dulezite)
+@online{arduinoUNO,
+  author       = {{Arduino}},
+  title        = {UNO R3},
+  url          = {https://docs.arduino.cc/hardware/uno-rev3/},
+  urldate      = {2026-10-17},
+  organization = {Arduino},
+  note         = {Produktová dokumentace}
+}
+
+% 4) PREDNASKOVE MATERIALY Z VYSOKE SKOLY (online publikovane poznamky)
+@online{mitfilters,
+  author       = {Agarwal, Anant and Lang, Jeffrey H.},
+  title        = {Lecture 18: Filters},
+  organization = {Massachusetts Institute of Technology, MIT OpenCourseWare},
+  date         = {2000},
+  url          = {https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/resources/6002_l18/},
+  urldate      = {2026-10-17},
+  note         = {Přednáškové poznámky předmětu 6.002 Circuits and Electronics}
+}
